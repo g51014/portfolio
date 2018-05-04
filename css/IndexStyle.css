@@ -1,0 +1,342 @@
+﻿/*
+ * Author: Carlos Alvarez
+ * URL: http://Alvarez.is
+ *
+ * Project Name: NYC Design
+ * Version: 1.0
+ * Date: 04-20-2014
+ * URL:
+ */
+
+
+/* ==========================================================================
+   Base Styles, Bootstrap Modifications & Fonts Import
+   ========================================================================== */
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+::-moz-selection {
+    background: #f2c2c9;
+    color: #a4003a;
+    text-shadow: none;
+}
+
+::selection {
+    background: #16a085;
+    color: #a4003a;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.centered {
+	text-align: center
+}
+
+.mt {
+	margin-top: 80px;
+}
+
+.mb {
+	margin-bottom: 80px;
+}
+
+/* ==========================================================================
+   General styles
+   ========================================================================== */
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    background-color:rgb(211, 212, 214);
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+h1, h2, h3, h4, h5, h6 , p {
+	font-weight: 700;
+    color: #4a4a4a;
+}
+
+
+.navbar-brand {
+	font-weight: 700;
+  padding-top: 5px;
+}
+
+.navbar-brand img
+{
+  width: 64px;
+  height: 64px;
+}
+
+.navbar-default .navbar-brand {
+	color: #1abc9c;
+}
+
+.navbar-default {
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #1abc9c;
+	background-color: transparent;
+	border-bottom: 2px solid #1abc9c
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #1abc9c;
+}
+
+/* ==========================================================================
+   Wrap Sections
+   ========================================================================== */
+
+#headerwrap {
+	background: url(../img/background/background2.png) no-repeat center top;
+	margin-top: -70px;
+	padding-top: 200px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	height: 100%;
+	width: 100%;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#headerwrap h1 { /*主視覺區字體顏色*/
+	color:#ffffff;
+    /*color : black;*/
+	padding-top: 10px;
+	padding-bottom: 20px;
+	letter-spacing: 4px;
+	font-size: 80px;
+	font-weight: 500;
+}
+
+#headerwrap h3 {
+	font-weight: 400;
+	color:#ffffff;
+    /*color : black;*/
+}
+
+#social {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #f2f2f2;
+}
+
+#social i {
+	font-size: 40px;
+	color: #4a4a4a
+}
+
+#social i:hover {
+	color: #1abc9c
+}
+
+#footerwrap {
+	padding-top: 50px;
+	padding-bottom: 30px;
+	background-color: #2f2f2f;
+}
+
+#footerwrap p {
+	color: #f2f2f2;
+	margin-left: 10px;
+}
+
+#workwrap {
+	background: url(../img/Mr.Murder.png) no-repeat center top;
+	margin-top: -70px;
+	padding-top: 250px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 650px;
+	width: 100%;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#workwrap h1 {
+	color:#ffffff;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	letter-spacing: 4px;
+	font-size: 80px;
+	font-weight: bold;
+}
+
+#workwrap h4 {
+	font-weight: 400;
+	color: #ffffff
+}
+
+#aboutwrap {
+	background: url(../img/about.png) no-repeat center top;
+	margin-top: -70px;
+	padding-top: 120px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 550px;
+	width: 100%;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#aboutwrap img
+{
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+}
+
+
+/* Gallery */
+.gallery {
+	margin-top: 30px;
+}
+
+.gallery img:hover {
+    transition:3s;
+	opacity: 0;
+}
+
+.gallery img
+{
+    position:absolute;
+}
+
+/*登入*/
+.login a
+{
+    margin-right:120px;
+}
+
+.login li
+{
+    list-style-type:none;
+    margin : 10px 0px;
+}
+
+.login ul
+{
+    margin : 1% 0px;
+}
+
+.login li h5
+{
+    font-weight:400;
+}
+
+.login input
+{
+    margin-top:13px;
+}
+
+.login button
+{
+    width:100px;
+    background-color:#1abc9c;
+    border:none;
+    color:white;
+    font-family:"思源宋體 ExtraLight";
+    font-size:14px;
+    font-weight:200;
+}
+
+.login button:hover
+{
+    background-color:darkgray;
+}
+
+/*三大特色敘述*/
+.aboutText
+{
+    margin-top:20%;
+}
+
+.aboutText p
+{
+    padding-left:28px;
+    text-align:justify;
+}
+/*簡介*/
+.about
+{
+    margin: 20px 0px 40px 0px;
+    padding:0px 275px;
+    text-align:justify;
+}
+
+/*文字*/
+.chinese h1,h2,h3,h4,h5,h6,p,td
+{
+    font-family:"思源宋體 ExtraLight";
+    line-height:200%;
+}
+
+.eng
+{
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.title
+{
+    background: url(../../img/background/line.png) left center repeat-x;
+}
+
+.title h1
+{
+    width:240px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/*帳號登入警示*/
+#alert
+{
+   color:red;
+}

@@ -1,0 +1,301 @@
+﻿/*個人頁面*/
+
+body,html {
+  overflow:hidden;
+  height: 100%;
+  width: 100%;
+}
+/*課程卡片*/
+.course
+{
+    margin-top:40px;
+    padding-bottom:20px;
+    border-bottom:solid;
+    border-bottom-color:#1abc9c;
+    border-bottom-width:2px;
+    background-color:#f2f2f2;
+    opacity:0.8;
+}
+.course h4,h3,h1 /*課程名稱*/
+{
+    color:darkgray;
+    text-align:center;
+}
+.course p /*課程敘述*/
+{
+    text-align:justify;
+    padding:0px 20px;
+    color:darkgray;
+}
+
+.course:hover
+{
+    transition:1s;
+    opacity:1;
+}
+
+.course:hover h4, .course:hover h1, .course:hover h3
+{
+    transition:1s;
+    color:black;
+}
+
+.course:hover p
+{
+    transition:1s;
+    color:black;
+}
+
+.course img
+{
+   width:100%;
+}
+
+.course input
+{
+    width:170px;
+    margin-left:10px;
+}
+
+/*icon*/
+.icon  a
+{
+    display:inline-block;
+    width:35px;
+    margin:0px 10px;
+}
+
+.icon img
+{
+    height:35px;
+    width:35px;
+}
+
+.icon a:hover img
+{
+    animation-name: rubberBand;
+    animation-duration:1s;
+}
+
+.icon
+{
+    text-align:center;
+   margin-top:20px;
+}
+
+/*個人資料*/
+.profile
+{
+    margin:5% auto;
+    text-align:center;
+}
+
+.profile img
+{
+    width:200px;
+    margin:auto;
+}
+
+.profile p
+{
+    font-size:28px;
+    margin:0 0;
+    font-weight:700;
+    text-align:justify;
+}
+
+.profile button
+{
+    width:100px;
+    background-color:#1abc9c;
+    border:none;
+    color:white;
+    font-family:"思源宋體 ExtraLight";
+    font-size:20px;
+    font-weight:200;
+}
+.profile button:hover
+{
+    background-color:darkgray;
+}
+
+/*詳細資料*/
+
+.detail
+{
+    margin:50px auto;
+    margin-left:30%;
+}
+
+#detail-form,#rpg-information ,#headerwrap, #portfolio, #navbar,#home,#menu,#footerwrap ,#murder-information ,#ntut-information,#a2-information,#penguin-information
+{
+    display:none;
+}
+
+/* 開場動畫 */
+#animation
+{
+  transform: skewY(-15deg) scaleX(0.78);
+  position: relative;
+}
+
+#animation h1
+{
+  font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:rgb(52, 52, 52);
+  margin-top: 20%;
+  font-size: 150px;
+}
+
+#animation h2
+{
+  font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 45px;
+  color:#1abc9c;
+  margin-top:-20px;
+  text-align: center;
+}
+
+/* #animation h1
+{
+  color:rgb(52, 52, 52);
+  margin-top: 20%;
+  font-size: 100px;
+} */
+
+/* #animation h2
+{
+  font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 45px;
+  color:#1abc9c;
+  margin-top:-20px;
+  text-align: center;
+} */
+
+/*主頁面*/
+#home
+{
+  height:100%;
+  width: 100%;
+  position: relative;
+  background-color:rgb(211, 212, 214);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#home h1
+{
+  font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:rgb(52, 52, 52);
+  margin-top: 10%;
+  font-size: 150px;
+}
+.words
+{
+  display: inline-block;
+}
+.welcome
+{
+  margin-left: -45px;
+}
+.portfolio
+{
+  margin-left: -8px;
+}
+.introduce
+{
+  margin-left: -45px;
+}
+.web
+{
+  display: none;
+}
+#w /*補償web與game的字元差距*/
+{
+  margin-left: 51.29px;
+}
+
+/*選單*/
+#menu
+{
+  left: 0px;
+  top: 0px;
+  height:100%;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+.menu-content h3
+{
+  font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 60px;
+  color:white;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.menu-content-name,.menu-content-portfolio  , .menu-content-contact ,.menu-content-award
+{
+  display: none;
+  margin-left: -10px;
+}
+
+.menu-card
+{
+  margin:150px 0;
+  padding:50px;
+  padding-top: 50px;
+}
+
+.menu-card img
+{
+  opacity:0.8;
+}
+
+.menu-card img :hover
+{
+  opacity: 1;
+}
+
+.portfolio-text-area
+{
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+}
+
+.portfolio-img-area
+{
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+}
+
+/*主選單按鈕*/
+.icon-menu
+{
+  padding:15px 0 0 50px;
+  display: none;
+}
+
+.icon-menu img
+{
+  width: 45px;
+}
+
+#portfolio
+{
+  padding-top: 50px;
+}
+
+/*RWD*/
+/* @media screen and (max-width: 600px){
+  .class
+  {
+    background: #ccc;
+  }
+} */

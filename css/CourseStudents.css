@@ -1,0 +1,30 @@
+﻿body {
+
+    
+}
+
+table {
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+table th {
+    padding-right: 80px;
+    padding-left: 80px;
+    font-size: 20pt;
+}
+
+table tr {
+    border-bottom:1pt solid black;
+}
+
+table tr td {
+    margin-right: 40px;
+    padding: 10px 0px;
+    font-size: 20pt;
+}
+
+.info-area
+{
+    text-align:justify;
+}
