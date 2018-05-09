@@ -80,119 +80,119 @@ $("#a2").hover(  //滑鼠離開卡片後會變回原本的介紹
   });
 
 //menu
-$(".menu-card > img").hover(
-  function(){
-    $(this).css('opacity','1');
-    if(finish == true)
-    {
-      //作品集
-      if($(this).attr('id') == 'menu-2')
-      {
-        //文字顯示名字
-        if($('.menu-content-name').css('display') != 'none')
-        {
-          TweenMax.staggerTo('.menu-content-name',0.5,{opacity:0,onComplete:ChangeMenuContentPortfolio},0.05);
-        }
-        //文字顯示聯絡我
-        if($('.menu-content-contact').css('display') != 'none')
-        {
-          TweenMax.staggerTo('.menu-content-contact',0.5,{opacity:0,onComplete:ChangeMenuContentPortfolio},0.05);
-        }
-        //文字顯示得獎紀錄
-        if($('.menu-content-award').css('display') != 'none')
-        {
-          TweenMax.staggerTo('.menu-content-award',0.5,{opacity:0,onComplete:ChangeMenuContentPortfolio},0.05);
-        }
-      }
-      //聯絡我
-      else if ($(this).attr('id') == 'menu-1') {
-        //文字顯示名字
-        if($('.menu-content-name').css('display') != 'none')
-        {
-          TweenMax.staggerTo('.menu-content-name',0.5,{opacity:0,onComplete:ChangeMenuContentContact},0.05);
-        }
-        //文字顯示作品集
-        if($('.menu-content-portfolio').css('display') != 'none')
-        {
-          TweenMax.staggerTo('.menu-content-portfolio',0.5,{opacity:0,onComplete:ChangeMenuContentContact},0.05);
-        }
-        //文字顯示得獎紀錄
-        if($('.menu-content-award').css('display') != 'none')
-        {
-          TweenMax.staggerTo('.menu-content-award',0.5,{opacity:0,onComplete:ChangeMenuContentContact},0.05);
-        }
-      }
-      //得獎紀錄
-      else if ($(this).attr('id') == 'menu-3') {
-        //文字顯示名字
-        if($('.menu-content-name').css('display') != 'none')
-        {
-          TweenMax.staggerTo('.menu-content-name',0.5,{opacity:0,onComplete:ChangeMenuContentAward},0.05);
-        }
-        //文字顯示作品集
-        if($('.menu-content-portfolio').css('display') != 'none')
-        {
-          TweenMax.staggerTo('.menu-content-portfolio',0.5,{opacity:0,onComplete:ChangeMenuContentAward},0.05);
-        }
-        //文字顯示聯絡我
-        if($('.menu-content-contact').css('display') != 'none')
-        {
-          TweenMax.staggerTo('.menu-content-award',0.5,{opacity:0,onComplete:ChangeMenuContentAward},0.05);
-        }
-      }
-    }
-  }
-  ,function()
-  {
-    $(this).css('opacity','0.8');
-  });
-
-$(".menu-card > img").click(function()
-{
-  if(!lock)
-  {
-    if (finish)
-    {
-      if ($(this).attr('id') == 'menu-1') {
-        if($('.menu-content-contact').css('display') != 'none')
-        {
-          TweenMax.staggerTo('.menu-content-contact',1,{color:'#1abc9c',opacity:0},0.05);
-          // TweenMax.staggerTo('.menu-card',0.5,{delay:1,opacity:0,display:'none',onComplete:ClearMenuContent},0.3);
-        }
-      }
-      else if ($(this).attr('id') == 'menu-2') {
-        if($('.menu-content-portfolio').css('display') != 'none')
-        {
-          TweenMax.staggerTo('.menu-content-portfolio',1,{color:'#1abc9c',opacity:0},0.05);
-          TweenMax.staggerTo('.menu-card',0.5,{delay:1,opacity:0,display:'none',onComplete:ClearMenuContent},0.3);
-          ShowPortfolio();
-        }
-      }
-      else if ($(this).attr('id') == 'menu-3') {
-        if($('.menu-content-award').css('display') != 'none')
-        {
-          TweenMax.staggerTo('.menu-content-award',1,{color:'#1abc9c',opacity:0},0.05);
-          // TweenMax.staggerTo('.menu-card',0.5,{delay:1,opacity:0,display:'none',onComplete:ClearMenuContent},0.3);
-        }
-      }
-    }
-    lock = true;
-    setTimeout(function(){lock = false},2500); //延遲2.5秒
-  }
-})
+// $(".menu-card > img").hover(
+//   function(){
+//     $(this).css('opacity','1');
+//     if(finish == true)
+//     {
+//       //作品集
+//       if($(this).attr('id') == 'menu-2')
+//       {
+//         //文字顯示名字
+//         if($('.menu-content-name').css('display') != 'none')
+//         {
+//           TweenMax.staggerTo('.menu-content-name',0.5,{opacity:0,onComplete:ChangeMenuContentPortfolio},0.05);
+//         }
+//         //文字顯示聯絡我
+//         if($('.menu-content-contact').css('display') != 'none')
+//         {
+//           TweenMax.staggerTo('.menu-content-contact',0.5,{opacity:0,onComplete:ChangeMenuContentPortfolio},0.05);
+//         }
+//         //文字顯示得獎紀錄
+//         if($('.menu-content-award').css('display') != 'none')
+//         {
+//           TweenMax.staggerTo('.menu-content-award',0.5,{opacity:0,onComplete:ChangeMenuContentPortfolio},0.05);
+//         }
+//       }
+//       //聯絡我
+//       else if ($(this).attr('id') == 'menu-1') {
+//         //文字顯示名字
+//         if($('.menu-content-name').css('display') != 'none')
+//         {
+//           TweenMax.staggerTo('.menu-content-name',0.5,{opacity:0,onComplete:ChangeMenuContentContact},0.05);
+//         }
+//         //文字顯示作品集
+//         if($('.menu-content-portfolio').css('display') != 'none')
+//         {
+//           TweenMax.staggerTo('.menu-content-portfolio',0.5,{opacity:0,onComplete:ChangeMenuContentContact},0.05);
+//         }
+//         //文字顯示得獎紀錄
+//         if($('.menu-content-award').css('display') != 'none')
+//         {
+//           TweenMax.staggerTo('.menu-content-award',0.5,{opacity:0,onComplete:ChangeMenuContentContact},0.05);
+//         }
+//       }
+//       //得獎紀錄
+//       else if ($(this).attr('id') == 'menu-3') {
+//         //文字顯示名字
+//         if($('.menu-content-name').css('display') != 'none')
+//         {
+//           TweenMax.staggerTo('.menu-content-name',0.5,{opacity:0,onComplete:ChangeMenuContentAward},0.05);
+//         }
+//         //文字顯示作品集
+//         if($('.menu-content-portfolio').css('display') != 'none')
+//         {
+//           TweenMax.staggerTo('.menu-content-portfolio',0.5,{opacity:0,onComplete:ChangeMenuContentAward},0.05);
+//         }
+//         //文字顯示聯絡我
+//         if($('.menu-content-contact').css('display') != 'none')
+//         {
+//           TweenMax.staggerTo('.menu-content-award',0.5,{opacity:0,onComplete:ChangeMenuContentAward},0.05);
+//         }
+//       }
+//     }
+//   }
+//   ,function()
+//   {
+//     $(this).css('opacity','0.8');
+//   });
+//
+// $(".menu-card > img").click(function()
+// {
+//   if(!lock)
+//   {
+//     if (finish)
+//     {
+//       if ($(this).attr('id') == 'menu-1') {
+//         if($('.menu-content-contact').css('display') != 'none')
+//         {
+//           TweenMax.staggerTo('.menu-content-contact',1,{color:'#1abc9c',opacity:0},0.05);
+//           // TweenMax.staggerTo('.menu-card',0.5,{delay:1,opacity:0,display:'none',onComplete:ClearMenuContent},0.3);
+//         }
+//       }
+//       else if ($(this).attr('id') == 'menu-2') {
+//         if($('.menu-content-portfolio').css('display') != 'none')
+//         {
+//           TweenMax.staggerTo('.menu-content-portfolio',1,{color:'#1abc9c',opacity:0},0.05);
+//           TweenMax.staggerTo('.menu-card',0.5,{delay:1,opacity:0,display:'none',onComplete:ClearMenuContent},0.3);
+//           ShowPortfolio();
+//         }
+//       }
+//       else if ($(this).attr('id') == 'menu-3') {
+//         if($('.menu-content-award').css('display') != 'none')
+//         {
+//           TweenMax.staggerTo('.menu-content-award',1,{color:'#1abc9c',opacity:0},0.05);
+//           // TweenMax.staggerTo('.menu-card',0.5,{delay:1,opacity:0,display:'none',onComplete:ClearMenuContent},0.3);
+//         }
+//       }
+//     }
+//     lock = true;
+//     setTimeout(function(){lock = false},2500); //延遲2.5秒
+//   }
+// })
 
 //偵測滾輪事件
-$(window).mousewheel(function(event) {
-   deltaX = event.deltaX;
-   deltaY = event.deltaY;
-   // console.log(lock);
-   if(deltaY == 1 && finish && !lock)
-   {
-     lock = true;
-     TweenMax.from('#menu',0.5,{onComplete:ChangeMenuContentName});
-     setTimeout(function(){lock = false},2500); //延遲2.5秒
-   }
-});
+// $(window).mousewheel(function(event) {
+//    deltaX = event.deltaX;
+//    deltaY = event.deltaY;
+//    // console.log(lock);
+//    if(deltaY == 1 && finish && !lock)
+//    {
+//      lock = true;
+//      TweenMax.from('#menu',0.5,{onComplete:ChangeMenuContentName});
+//      setTimeout(function(){lock = false},2500); //延遲2.5秒
+//    }
+// });
 
 function ChangeWordsWeb()
 {
@@ -266,28 +266,26 @@ function ShowHome()
 
 function ShowMenu()
 {
+  $('#menu-1').css('display','none');
+  $('#menu-3').css('display','none');
   $('#home').css('display','none');
   $('#menu').css('position','relative');
   $('#menu').css('display','block');
   $('#menu').css('z-index','1');
   $('#menu').css('opacity','1');
-  $('.menu-content-name').css('display','inline-block');
+  // $('.menu-content-name').css('display','inline-block');
   // $('.menu-img-area').css('background-image','url(img/background/black.png)');
 }
 
 function ShowPortfolio() {
   $("#portfolio").css('display','block');
   $('.icon-menu').css('display','block');
-  setTimeout(function () {
-    $('.menu-content-name').css('display','none');
-    $('.menu-content-contact').css('display','none');
-    $('.menu-content-award').css('display','none');
-    $('.menu-content-portfolio').css('display','inline-block');
-    $('.menu-content-portfolio').css('opacity','1');
-    $('.menu-content-portfolio').css('color','white');
-    TweenMax.staggerFrom('.menu-content-portfolio',0.5,{opacity:0},0.1);
-  },2500);
-  TweenMax.staggerFrom('.course',1,{opacity:0,x:$('.course').offset().left+1000,delay:3},0.5);
+  $('.menu-content-name').css('disply','none');
+  $('.menu-content-contact').css('display','none');
+  $('.menu-content-award').css('display','none');
+  $('.menu-content-portfolio').css('display','inline-block');
+  $('.menu-content-portfolio').css('opacity','0');
+  $('.menu-content-portfolio').css('color','white');
 }
 
 function FinishCardAnimation() {
@@ -313,9 +311,11 @@ function FinishCardAnimation() {
 //menu
   TweenMax.to('#home',1.43,{delay:8.1,opacity:0,onComplete:ShowMenu});
   TweenMax.from('#menu',1,{delay:8.6,opacity:0});
-  TweenMax.staggerFrom('.menu-card',0.5,{delay:10.6,opacity:0,x:2000},0.3);
-  TweenMax.staggerFrom('.menu-content-name',0.5,{delay:12,opacity:0,onComplete:FinishCardAnimation},0.05);
-
+  TweenMax.from('#menu-2',0.5,{delay:10.6,opacity:0,y:1000});
+  // TweenMax.staggerFrom('.menu-content-name',0.5,{delay:12,opacity:0,onComplete:ClearMenuContent},0.05);
+  TweenMax.to('.menu-card',0.5,{delay:12,opacity:0,rotation:360,display:'none',onComplete:ShowPortfolio});
+  TweenMax.staggerFrom('.menu-content-portfolio',0.5,{opacity:0,delay:13},0.1);
+  TweenMax.staggerFrom('.course',1,{opacity:0,x:$('.course').offset().left+1000,delay:14},0.5);
 //利用GSAP實現晃動特效 416.95 316.66
 function Shake(object)
 {
