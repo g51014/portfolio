@@ -266,8 +266,7 @@ function ShowHome()
 
 function ShowMenu()
 {
-  $('#menu-1').css('display','none');
-  $('#menu-3').css('display','none');
+  $('.menu-card').css('display','none');
   $('#home').css('display','none');
   $('#menu').css('position','relative');
   $('#menu').css('display','block');
@@ -310,12 +309,10 @@ function FinishCardAnimation() {
   TweenMax.staggerTo('.introduce',0.1,{delay:8.1,x:$('#words_desinger').offset().left-100,opacity:0},0.03);
 //menu
   TweenMax.to('#home',1.43,{delay:8.1,opacity:0,onComplete:ShowMenu});
-  TweenMax.from('#menu',1,{delay:8.6,opacity:0});
-  TweenMax.from('#menu-2',0.5,{delay:10.6,opacity:0,y:1000});
+  TweenMax.from('#menu',1,{delay:8.6,opacity:0,onComplete:ShowPortfolio});
   // TweenMax.staggerFrom('.menu-content-name',0.5,{delay:12,opacity:0,onComplete:ClearMenuContent},0.05);
-  TweenMax.to('.menu-card',0.5,{delay:12,opacity:0,rotation:360,display:'none',onComplete:ShowPortfolio});
-  TweenMax.staggerFrom('.menu-content-portfolio',0.5,{opacity:0,delay:13},0.1);
-  TweenMax.staggerFrom('.course',1,{opacity:0,x:$('.course').offset().left+1000,delay:14},0.5);
+  TweenMax.staggerFrom('.menu-content-portfolio',0.5,{opacity:0,delay:10.6},0.1);
+  TweenMax.staggerFrom('.course',1,{opacity:0,x:$('.course').offset().left+1000,delay:11.6},0.5);
 //利用GSAP實現晃動特效 416.95 316.66
 function Shake(object)
 {
